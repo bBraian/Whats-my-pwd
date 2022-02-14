@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
         flex: 1,
         paddingTop: getStatusBarHeight() + 15,
         paddingHorizontal: 24,
-        justifyContent: "space-evenly"
     },
     subtitle: {
         color: theme.colors.heading,
@@ -17,25 +16,19 @@ export const styles = StyleSheet.create({
     title: {
         color: theme.colors.heading,
         fontFamily: theme.fonts.bold,
-        fontSize: 40,
-        alignSelf: 'center'
-    },
-    textTitle: {
-        color: theme.colors.heading,
-        fontFamily: theme.fonts.bold,
-        fontSize: 30,
-        marginTop: 15
+        fontSize: 30
     },
     textSubtitle: {
         color: theme.colors.heading,
         fontFamily: theme.fonts.medium,
         fontSize: 20
     },
-    languagesArea: {
-        marginTop: 10,
-        width: '100%',
-        height: "55%"
-    },  
+    textTitle: {
+        color: theme.colors.heading,
+        fontFamily: theme.fonts.bold,
+        fontSize: 30
+    },
+
     button: {
         width: '100%',
         height: 70,

@@ -11,11 +11,12 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 10,
         marginVertical: 5.5,
+        backgroundColor: 'red'
     },
     img: {
         width: 50,
         height: 50,
-        backgroundColor: theme.colors.highlight,
+        // backgroundColor: theme.colors.highlight,
         borderRadius: 9,
         marginRight: 35
     },
