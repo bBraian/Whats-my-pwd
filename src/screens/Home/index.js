@@ -4,19 +4,30 @@ import { styles } from './styles';
 
 import { Search } from "../../components/Search";
 import { Header } from "../../components/Header";
+import { Counter } from "../../components/Counter";
+import { List } from "../../components/List";
+import { theme } from "../../global/styles/theme";
 
 export function Home() {
     return (
         <View style={styles.container}>
-            <Header />
+            <View style={{height: '12%'}}>
+                <Header />
+            </View>
+            
 
-            <View>
+            <View style={{height: '74%'}}>
                 <Search />
+                <Counter />
+                <List />
             </View>
 
-            <TouchableOpacity activeOpacity={0.7} style={styles.button}>
-                <Text style={styles.textButtom}>Ready</Text>
-            </TouchableOpacity>
+            <View style={{height: '14%', justifyContent: 'flex-end', backgroundColor: theme.colors.background}}>
+                <TouchableOpacity activeOpacity={0.7} style={styles.button}>
+                    <Text style={styles.textButtom}>Ready</Text>
+                </TouchableOpacity>
+            </View>
+            
         </View>
     );
 }
