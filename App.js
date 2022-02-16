@@ -9,6 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'react-native';
 import { SignIn } from './src/screens/SignIn';
 import { Languages } from './src/screens/Languages';
+import { Home } from './src/screens/Home';
 import { theme } from './src/global/styles/theme';
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false, backgroundColor: theme.colors.background }}>
         <Stack.Screen name="Languages" component={Languages}/>
         <Stack.Screen name="SignIn" component={SignIn}/>
+        <Stack.Screen name="Home" component={Home}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
