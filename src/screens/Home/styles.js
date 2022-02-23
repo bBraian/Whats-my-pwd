@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.heading,
         borderRadius: 12,
         alignItems: 'center',
-        marginTop: 10,
+        marginTop: 5,
         justifyContent: 'center',
         marginBottom: 15
     },

@@ -4,16 +4,15 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: '3.8%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        paddingHorizontal: '4%',
+        height: 120,
+        marginVertical: '8%'
     },
-    message: {
-        color: theme.colors.heading,
-        fontSize: 18,
-        fontFamily: theme.fonts.bold
+    block: {
+        width: 100,
+        height: "100%",
+        backgroundColor: 'white',
+        borderRadius: 8,
+        marginHorizontal: 5
     },
     total: {
         color: theme.colors.heading,

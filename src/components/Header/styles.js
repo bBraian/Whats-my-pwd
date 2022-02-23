@@ -4,13 +4,13 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: 70,
+        height: "100%",
         borderRadius: 12,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 10,
-        marginTop: 6
+        marginTop: "5%"
         // backgroundColor: 'red'
     },
     img: {

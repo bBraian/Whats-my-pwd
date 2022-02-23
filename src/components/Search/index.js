@@ -5,7 +5,7 @@ import { styles } from "./styles";
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
-export function Search() {
+export function Search({...rest}) {
     const [text, setText] = useState('Search for password')
 
     return (
@@ -16,7 +16,7 @@ export function Search() {
                 </TextInput>
             </View>
             
-            <TouchableOpacity style={styles.img} activeOpacity={0.7}><AntDesign name="filter" size={35} color="black" /></TouchableOpacity>
+            <TouchableOpacity style={styles.img} activeOpacity={0.7} {...rest}><AntDesign name="filter" size={35} color="black" /></TouchableOpacity>
         </View>
     );
 }

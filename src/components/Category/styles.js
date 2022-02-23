@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: 'white',
-        marginBottom: 10
+        marginBottom: 10,
+        marginTop: 18
     },
     icon: {
         width: 45,

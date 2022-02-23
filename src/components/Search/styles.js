@@ -4,16 +4,17 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
     container: {
         width: '100%',
+        height: '10%',
         borderRadius: 12,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginVertical: 20
+        marginVertical: "8%"
     },
     img: {
         width: 60,
         height: 60,
-        backgroundColor: 'orange',
+        backgroundColor: '#A1FCDF',
         borderRadius: 12,
         justifyContent: 'center',
         alignItems: 'center'
