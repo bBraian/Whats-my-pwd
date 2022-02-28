@@ -6,8 +6,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { styles } from "./styles";
 
 export function ModalView({ children, handleOpenCloseModal, ...rest }) {
-    // const [modalVisible, setModalVisible] = useState(false);
-
     return (
         <Modal
             transparent
