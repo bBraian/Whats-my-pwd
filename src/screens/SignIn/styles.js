@@ -50,7 +50,8 @@ export const styles = StyleSheet.create({
         height: 50,
         paddingLeft: 20,
         fontSize: 20,
-        fontFamily: theme.fonts.medium
+        fontFamily: theme.fonts.medium,
+        marginBottom: 15,
     },
     passwordInput: {
         width: '100%',

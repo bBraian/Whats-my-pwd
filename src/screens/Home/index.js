@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, TouchableOpacity, Text, KeyboardAvoidingView } from "react-native";
+import { View, TouchableOpacity, Text } from "react-native";
 import { styles } from './styles';
 
 import { Search } from "../../components/Search";
@@ -12,6 +12,7 @@ import { theme } from "../../global/styles/theme";
 
 export function Home() {
     const [modalVisible, setModalVisible] = useState(false);
+    const [search, setSearch] = useState('');
 
     function handleOpenCloseModal() {
         modalVisible ? setModalVisible(false) : setModalVisible(true);
@@ -25,9 +26,9 @@ export function Home() {
             
 
             <View style={{height: '74%', justifyContent: 'center'}}>
-                <Search onPress={handleOpenCloseModal} />
+                <Search handleOpenCloseModal={handleOpenCloseModal} search={search} setSearch={setSearch} />
                 <Counter />
-                <List />
+                <List search={search} />
                 
             </View>
 

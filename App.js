@@ -44,7 +44,7 @@ export default function App() {
       />
 
       <Stack.Navigator screenOptions={{ headerShown: false, backgroundColor: theme.colors.background }}>
-        <Stack.Screen name="Languages" component={Languages}/>
+        {/* <Stack.Screen name="Languages" component={Languages}/> */}
         <Stack.Screen name="SignIn" component={SignIn}/>
         <Stack.Screen name="Home" component={Home}/>
       </Stack.Navigator>

@@ -5,15 +5,14 @@ import { styles } from "./styles";
 import { Category } from "../Category";
 import { Item } from "../Item";
 
-export function List() {
+export function List({ search }) {
 
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 
                 <Category category="Bank" />
-            
-                <Item name="NuBank" password="123123" />
+                <Item name={search} password="123123" />
                 <Item name="Digio" password="testedeas" />
                 <Item name="Sicredi" password="515185" />
 
